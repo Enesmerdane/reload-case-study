@@ -10,10 +10,10 @@ function Home() {
                 <Logo classname="main-page__logo" />
             </header>
             <div className="section1">
-                <h1>
+                <div className="section1__heading">
                     <code>AI</code> Chatbot
-                </h1>
-                <div>
+                </div>
+                <div className="section1__description">
                     We’ve trained a model called ChatGPT which interacts in a
                     conversational way.
                 </div>

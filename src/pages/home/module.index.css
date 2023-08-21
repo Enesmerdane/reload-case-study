@@ -7,12 +7,36 @@ header {
     width: 7.81544rem;
     margin: auto;
     margin-top: 2.69rem;
+    margin-bottom: 8.19rem;
 }
 
 .section1 {
-    height: 100%
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section1__heading {
+    font-size: 4rem;
+    font-weight: 700;
+    text-align: center;
+    line-height: 4.1875rem;
 }
 
 code {
+    font-family: inherit;
     color:#B6FBFF;
+}
+
+.section1__description {
+    color: rgba(255, 255, 255, 0.70);
+    text-align: center;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 400;
+    width: 500px;
+    margin-top: 2rem;
+    line-height: 1.4375rem; /* 115% */
+    letter-spacing: 0.045rem;
 }
