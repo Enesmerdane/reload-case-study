@@ -1,3 +1,18 @@
+header {
+    display: flex;
+    align-items: center;
+}
+
+.main-page__logo {
+    width: 7.81544rem;
+    margin: auto;
+    margin-top: 2.69rem;
+}
+
 .section1 {
     height: 100%
+}
+
+code {
+    color:#B6FBFF;
 }

@@ -1,13 +1,18 @@
 import "./module.index.css";
+import Logo from "../../utils/logo";
 
 import React from "react";
 
 function Home() {
     return (
         <>
-            <header>reload.case</header>
+            <header>
+                <Logo classname="main-page__logo" />
+            </header>
             <div className="section1">
-                <h1>AI Chatbot</h1>
+                <h1>
+                    <code>AI</code> Chatbot
+                </h1>
                 <div>
                     We’ve trained a model called ChatGPT which interacts in a
                     conversational way.
