@@ -7,7 +7,7 @@ header {
     width: 7.81544rem;
     margin: auto;
     margin-top: 2.69rem;
-    margin-bottom: 8.19rem;
+    margin-bottom: 4rem;
 }
 
 .section1 {
@@ -36,9 +36,13 @@ code {
     font-style: normal;
     font-weight: 400;
     width: 500px;
-    margin-top: 2rem;
+    margin-top: 1rem;
     line-height: 1.4375rem; /* 115% */
     letter-spacing: 0.045rem;
+}
+
+.section1__button {
+    margin-top: 3rem;
 }
 
 .section2 {
@@ -47,30 +51,31 @@ code {
 }
 
 .section2__heading {
-    font-size: 4rem;
+    font-size: 2.75rem;
     font-weight: 700;
     text-align: left;
-    line-height: 4.1875rem;
+    line-height: 4.18rem;
 }
 
 .section2__description {
     color: rgba(255, 255, 255, 0.70);
     text-align: left;
-    font-size: 1.25rem;
+    font-size: 1rem;
     font-style: normal;
     font-weight: 400;
     width: 500px;
-    margin-top: 2rem;
-    margin-bottom: 2.5rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
     line-height: 1.4375rem; /* 115% */
     letter-spacing: 0.045rem;
 }
 
 .section2__link {
     text-decoration: none;
+    font-size: 0.9rem;
     display: block;
     color: #B6FBFF;
-    margin-bottom: 4rem;
+    margin-bottom: 2rem;
 }
 
 .section2__link_vector {
@@ -80,5 +85,47 @@ code {
 .section2__chat_img {
     display:block;
     margin:auto;
-    width: 1100px;
+    width: 800px;
+    margin-left:0px
+}
+
+.section3{
+    margin-top: 161.94px;
+    display: flex;
+    flex-direction:row;
+    align-content: center;
+    border-top:1px solid #303030;
+    border-bottom:1px solid #303030;
+}
+.section3__leftside {
+    width: 670px;
+    height: 1218px;
+    border-right:1px solid #303030;
+    padding-top: 40px;
+    padding-left: 8.25rem;
+
+}
+
+.section3__leftside_heading {
+    font-size: 2.75rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 3rem;
+    margin-bottom: 1rem;
+}
+
+.section3__leftside_description {
+    font-size: 1rem;
+    margin-right: 3rem;
+    line-height: 1.5rem;
+}
+
+.section3__rightside {
+    width:770px;
+    padding-top:80px;
+}
+
+.section3__button { 
+    margin-top: 2.5rem;
+    padding: 0rem 2rem !important;
 }

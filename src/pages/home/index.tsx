@@ -1,4 +1,4 @@
-import styles from "./styles.module.css";
+import "./styles.css";
 import Logo from "../../utils/logo";
 import Vector from "../../utils/vector";
 import ChatImage from "../../utils/chat_image";
@@ -10,12 +10,12 @@ import Button, { buttonColorEnum } from "../../components/homePageButton";
 function Home() {
     return (
         <>
-            <div className={styles.section1}>
-                <Logo classname={styles.main_page__logo} />
-                <div className={styles.section1__heading}>
+            <div className="section1">
+                <Logo classname="main_page__logo" />
+                <div className="section1__heading">
                     <code>AI</code> Chatbot
                 </div>
-                <div className={styles.section1__description}>
+                <div className="section1__description">
                     We’ve trained a model called ChatGPT which interacts in a
                     conversational way.
                 </div>
@@ -25,33 +25,41 @@ function Home() {
                     onclick={(e) => {
                         window.location.href = "#section2";
                     }}
+                    classname="section1__button"
                 />
             </div>
-            <div className={styles.section2} id="section2">
-                <div className={styles.section2__heading}>
-                    Start chatting with AI.
-                </div>
-                <div className={styles.section2__description}>
+            <div className="section2" id="section2">
+                <div className="section2__heading">Start chatting with AI.</div>
+                <div className="section2__description">
                     Chat about any topic with ChatGPT in any time. It can be
                     your friend, tutor or therapist.
                 </div>
-                <Link to="/chat" className={styles.section2__link}>
+                <Link to="/chat" className="section2__link">
                     Let's Start Chat
-                    <Vector classname={styles.section2__link_vector} />
+                    <Vector classname="section2__link_vector" />
                 </Link>
-                <ChatImage classname={styles.section2__chat_img}/>
+                <ChatImage classname="section2__chat_img" />
             </div>
             <div className="section3">
-                <div>
-                    <h1>Chat with unique characters</h1>
-                    <div>
+                <div className="section3__leftside">
+                    <div className="section3__leftside_heading">
+                        Chat with unique characters
+                    </div>
+                    <div className="section3__leftside_description">
                         You can chat many different characters for a few set of
                         topics and interests.
                     </div>
-                    <button>Let’s start chat</button>
+                    <Button
+                        text="Let’s start chat"
+                        color={buttonColorEnum.blue}
+                        onclick={(e) => {
+                            window.location.href = "/chat";
+                        }}
+                        classname="section3__button"
+                    />
                     <div>Rectangle</div>
                 </div>
-                <div>images and texts</div>
+                <div className="section3__rightside">images and texts</div>
             </div>
             <div className="section4">
                 <h1>Let’s start experiencing the new internet today.</h1>
