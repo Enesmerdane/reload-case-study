@@ -15,8 +15,6 @@ interface buttonProps {
 function Button(props: buttonProps) {
     const buttonColor = props.color ? props.color : buttonColorEnum.white;
 
-    console.log(props.color);
-
     return (
         <button
             className={`${props.classname} button ${buttonColor}`}

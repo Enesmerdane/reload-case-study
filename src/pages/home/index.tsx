@@ -3,6 +3,8 @@ import Logo from "../../utils/logo";
 import Vector from "../../utils/vector";
 import ChatImage from "../../utils/chat_image";
 
+import { topicsData } from "../../data/topics";
+
 import { Link } from "react-router-dom";
 
 import Button, { buttonColorEnum } from "../../components/homePageButton";
@@ -57,9 +59,26 @@ function Home() {
                         }}
                         classname="section3__button"
                     />
-                    <div>Rectangle</div>
+                    <div className="section3__rectangle"></div>
                 </div>
-                <div className="section3__rightside">images and texts</div>
+                <div className="section3__rightside">
+                    {topicsData.map((item, id) => {
+                        // console.log(item);
+
+                        return (
+                            <div className="section3__topic_item" key={id}>
+                                <img
+                                    // src={`../../assets/${item.topicImage}.jpg`}
+                                    src={item.topicImage}
+                                    className="section3__topic_item_img"
+                                />
+                                <div className="section3__topic_description">
+                                    {item.topicName}
+                                </div>
+                            </div>
+                        );
+                    })}
+                </div>
             </div>
             <div className="section4">
                 <h1>Let’s start experiencing the new internet today.</h1>
