@@ -40,3 +40,45 @@ code {
     line-height: 1.4375rem; /* 115% */
     letter-spacing: 0.045rem;
 }
+
+.section2 {
+    padding-left: 8.25rem;
+    padding-top: 2rem;
+}
+
+.section2__heading {
+    font-size: 4rem;
+    font-weight: 700;
+    text-align: left;
+    line-height: 4.1875rem;
+}
+
+.section2__description {
+    color: rgba(255, 255, 255, 0.70);
+    text-align: left;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 400;
+    width: 500px;
+    margin-top: 2rem;
+    margin-bottom: 2.5rem;
+    line-height: 1.4375rem; /* 115% */
+    letter-spacing: 0.045rem;
+}
+
+.section2__link {
+    text-decoration: none;
+    display: block;
+    color: #B6FBFF;
+    margin-bottom: 4rem;
+}
+
+.section2__link_vector {
+    margin-left: 0.5rem;
+}
+
+.section2__chat_img {
+    display:block;
+    margin:auto;
+    width: 1100px;
+}

@@ -16,7 +16,7 @@ function Button(props: buttonProps) {
     const buttonStyle = { backgroundColor: buttonColor, ...styles };
 
     return (
-        <button style={buttonStyle} onClick={props.onclick}>
+        <button className={styles.button} onClick={props.onclick}>
             {props.text}
         </button>
     );

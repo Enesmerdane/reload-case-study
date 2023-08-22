@@ -1,5 +1,9 @@
 import styles from "./styles.module.css";
 import Logo from "../../utils/logo";
+import Vector from "../../utils/vector";
+import ChatImage from "../../utils/chat_image";
+
+import { Link } from "react-router-dom";
 
 import Button, { buttonColorEnum } from "../../components/homePageButton";
 
@@ -23,14 +27,19 @@ function Home() {
                     }}
                 />
             </div>
-            <div className="section2" id="section2">
-                <h1>Start chatting with AI.</h1>
-                <div>
+            <div className={styles.section2} id="section2">
+                <div className={styles.section2__heading}>
+                    Start chatting with AI.
+                </div>
+                <div className={styles.section2__description}>
                     Chat about any topic with ChatGPT in any time. It can be
                     your friend, tutor or therapist.
                 </div>
-                <button>Let's Start Chat ---{`>`}</button>
-                <div>img</div>
+                <Link to="/chat" className={styles.section2__link}>
+                    Let's Start Chat
+                    <Vector classname={styles.section2__link_vector} />
+                </Link>
+                <ChatImage classname={styles.section2__chat_img}/>
             </div>
             <div className="section3">
                 <div>
