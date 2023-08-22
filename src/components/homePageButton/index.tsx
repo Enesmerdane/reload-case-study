@@ -3,6 +3,7 @@ import "./styles.css";
 export enum buttonColorEnum {
     blue = "blue",
     white = "white",
+    black = "black",
 }
 
 interface buttonProps {
@@ -14,12 +15,10 @@ interface buttonProps {
 
 function Button(props: buttonProps) {
     const buttonColor = props.color ? props.color : buttonColorEnum.white;
-
     return (
         <button
             className={`${props.classname} button ${buttonColor}`}
             onClick={props.onclick}
-            background-color={buttonColor}
         >
             {props.text}
         </button>

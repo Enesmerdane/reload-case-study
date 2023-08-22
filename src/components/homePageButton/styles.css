@@ -16,3 +16,9 @@
 .white {
     background-color: #FFFFFF;
 }
+
+.black {
+    background-color: black;
+    color : #FFFFFF;
+    border-color : #FFFFFF;
+}

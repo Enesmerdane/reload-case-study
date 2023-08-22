@@ -81,48 +81,69 @@ function Home() {
                 </div>
             </div>
             <div className="section4">
-                <h1>Let’s start experiencing the new internet today.</h1>
-                <button>Get started for free</button>
+                <div className="section4__head">
+                    <div className="section4__heading">
+                        Let’s start experiencing the new internet{" "}
+                        <code>today.</code>
+                    </div>
+                    <Button
+                        text="Get started for free"
+                        color={buttonColorEnum.blue}
+                        onclick={(e) => {
+                            window.location.href = "/chat";
+                        }}
+                        classname="section4__button"
+                    />
+                </div>
             </div>
             <footer>
-                <div>
-                    <div>
+                <div className="mainpage__footer_part1">
+                    <div className="mainpage__footer_contact_us">
                         <h3>
                             We would love to hear from you. Let’s work —
                             together with Reload
                         </h3>
-                        <button>Contact us</button>
+                        <Button
+                            text="Contact us!"
+                            color={buttonColorEnum.black}
+                            onclick={(e) => {
+                                window.location.href = "/chat";
+                            }}
+                            classname="mainpage__footer_button"
+                        />
                     </div>
-                    <div>
-                        <h3>Business requires</h3>
-                        <div>hello@colstic.com</div>
-                        <div>+27 123 456 789</div>
-                    </div>
-                    <div>
-                        <h3>London</h3>
-                        <div>133A Rye lane London SE15 4BQ UK</div>
-                    </div>
-                    <div>
-                        <h3>Open positions</h3>
-                        <ul>
-                            <li>Junior Graphic Design</li>
-                            <li>Videography</li>
-                            <li>Photography</li>
-                        </ul>
-                    </div>
-                    <div>
-                        <h3>Cape town</h3>
-                        <div>14 Upper pepper street CBD, 8001 Cape Town</div>
+                    <div className="mainpage__footer_information">
+                        <div>
+                            <h3>Business requires</h3>
+                            <div>hello@colstic.com</div>
+                            <div>+27 123 456 789</div>
+                        </div>
+                        <div>
+                            <h3>London</h3>
+                            <div>133A Rye lane London SE15 4BQ UK</div>
+                        </div>
+                        <div>
+                            <h3>Open positions</h3>
+                            <div>Junior Graphic Design</div>
+                            <div>Videography</div>
+                            <div>Photography</div>
+                        </div>
+                        <div>
+                            <h3>Cape town</h3>
+                            <div>
+                                14 Upper pepper street CBD, 8001 Cape Town
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div>
-                    <div>reload.case</div>
-                    <div>
-                        <ul>
-                            <li>DRIBBLE</li>
-                            <li>INSTAGRAM</li>
-                            <li>LINKEDIN</li>
-                        </ul>
+                <div className="mainpage__footer_part2">
+                    <div className="mainpage__footer_part2_logo_container">
+                        <Logo classname="mainpage__footer_part2_logo" />
+                    </div>
+                    <div className="mainpage__footer_part2_social_media">
+                        <div>DRIBBLE</div>
+                        <div>INSTAGRAM</div>
+                        <div>LINKEDIN</div>
                     </div>
                 </div>
             </footer>
