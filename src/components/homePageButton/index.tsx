@@ -1,20 +1,25 @@
 import styles from "./styles.module.css";
 
-enum buttonColorEnum {
+export enum buttonColorEnum {
     white = "#FFFFFF",
     blue = "#B6FBFF",
 }
 
 interface buttonProps {
     text: string;
-    color?: buttonColorEnum;
+    color: buttonColorEnum;
+    onclick: React.MouseEventHandler<HTMLButtonElement>;
 }
 
 function Button(props: buttonProps) {
     const buttonColor = props.color ? props.color : buttonColorEnum.white;
     const buttonStyle = { backgroundColor: buttonColor, ...styles };
 
-    return <button style={buttonStyle}>{props.text}</button>;
+    return (
+        <button style={buttonStyle} onClick={props.onclick}>
+            {props.text}
+        </button>
+    );
 }
 
 export default Button;

@@ -1,15 +1,13 @@
 import styles from "./styles.module.css";
 import Logo from "../../utils/logo";
 
-import Button from "../../components/homePageButton";
+import Button, { buttonColorEnum } from "../../components/homePageButton";
 
 function Home() {
     return (
         <>
-            <header>
-                <Logo classname={styles.main_page__logo} />
-            </header>
             <div className={styles.section1}>
+                <Logo classname={styles.main_page__logo} />
                 <div className={styles.section1__heading}>
                     <code>AI</code> Chatbot
                 </div>
@@ -17,9 +15,15 @@ function Home() {
                     We’ve trained a model called ChatGPT which interacts in a
                     conversational way.
                 </div>
-                <Button text="Continue" />
+                <Button
+                    text="Continue"
+                    color={buttonColorEnum.white}
+                    onclick={(e) => {
+                        window.location.href = "#section2";
+                    }}
+                />
             </div>
-            <div className="section2">
+            <div className="section2" id="section2">
                 <h1>Start chatting with AI.</h1>
                 <div>
                     Chat about any topic with ChatGPT in any time. It can be

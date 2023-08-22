@@ -7,4 +7,5 @@ button {
     font-weight: 600;
     margin-top: 4rem;
     letter-spacing: 0.015rem;
+    cursor: pointer;
 }
