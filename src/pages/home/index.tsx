@@ -1,23 +1,23 @@
-import "./module.index.css";
+import styles from "./styles.module.css";
 import Logo from "../../utils/logo";
 
-import React from "react";
+import Button from "../../components/homePageButton";
 
 function Home() {
     return (
         <>
             <header>
-                <Logo classname="main-page__logo" />
+                <Logo classname={styles.main_page__logo} />
             </header>
-            <div className="section1">
-                <div className="section1__heading">
+            <div className={styles.section1}>
+                <div className={styles.section1__heading}>
                     <code>AI</code> Chatbot
                 </div>
-                <div className="section1__description">
+                <div className={styles.section1__description}>
                     We’ve trained a model called ChatGPT which interacts in a
                     conversational way.
                 </div>
-                <a href="#section4">Continue</a>
+                <Button text="Continue" />
             </div>
             <div className="section2">
                 <h1>Start chatting with AI.</h1>
