@@ -79,21 +79,39 @@
     align-items: center;
 }
 
-.chatpage__input_field>input{
-    color:white;
+.chatpage__input_field>textarea{
     background: rgba(255, 255, 255, 0.00);
-    height: 2.8rem;
-    border-radius: 100px;
+    height: 100%;
     border:none;
-    width: 100%;
+    font-size:1rem;
+    color: white;
+    resize:none;
     padding-left: 1.2rem;
     padding-right: 1rem;
+    width: 100%;
+    border-top-left-radius: 100px;
+    border-bottom-left-radius: 100px;;
+    
+
+
+    /*
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+     */
 }
-.chatpage__input_field>input:focus {
+
+.chatpage__input_field>textarea::-webkit-scrollbar{
+    width:0%
+}
+
+.chatpage__input_field>textarea:focus {
     outline:none;
 }
 
 .chatpage__send_button {
     height: 70%;
     margin-right: 0.4rem;
+    cursor: pointer;
 }

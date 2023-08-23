@@ -27,8 +27,14 @@ function Chat() {
                 <div className="chatpage_chat_screen">
                     <div className="chatpage__message_container"></div>
                     <div className="chatpage__input_field">
-                        <input />
-                        <SendButton classname="chatpage__send_button" />
+                        {/* <input /> */}
+                        <textarea placeholder="Enter your message"/>
+                        <SendButton
+                            classname="chatpage__send_button"
+                            onclick={() => {
+                                window.alert("sent yey");
+                            }}
+                        />
                     </div>
                 </div>
             </div>
