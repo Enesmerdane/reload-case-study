@@ -9,17 +9,22 @@ interface MessageInterface {
 
 function MessageBox(props: MessageInterface) {
     let senderTitle = props.sentByUser ? "You" : "Chat GPT";
-
+    
     return (
         <div
             className={`chatpage__message_box ${
                 !props.sentByUser ? "response" : null
             }`}
         >
-            <img
-                src={!props.sentByUser ? ChatGPTLogo : null}
-                className="chatpage_message_box_img"
-            ></img>
+            {props.sentByUser ? (
+                <div className="chatpage_message_box_noimg_circle"></div>
+            ) : (
+                <img
+                    src={!props.sentByUser ? ChatGPTLogo : null}
+                    className="chatpage_message_box_img"
+                ></img>
+            )}
+
             <div className="chatpage_message_box_text">
                 <code>{senderTitle}</code>
                 <div className="chatpage_message_box_text_content">

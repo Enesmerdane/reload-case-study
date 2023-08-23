@@ -17,6 +17,14 @@
     margin-right: 1rem;
 }
 
+.chatpage_message_box_noimg_circle {
+    height:35px;
+    width:35px;
+    border-radius: 50%;
+    background-color: #B6FBFF;
+    margin-right: 1rem;
+}
+
 .chatpage_message_box_text {
     margin-top:0.5rem;
 }
