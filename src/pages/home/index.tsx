@@ -114,24 +114,44 @@ function Home() {
                     </div>
                     <div className="mainpage__footer_information">
                         <div>
-                            <h3>Business requires</h3>
-                            <div>hello@colstic.com</div>
-                            <div>+27 123 456 789</div>
+                            <div className="mainpage__footer_information_title">
+                                Business requires
+                            </div>
+                            <div className="mainpage__footer_information_text">
+                                hello@colstic.com
+                            </div>
+                            <div className="mainpage__footer_information_text">
+                                +27 123 456 789
+                            </div>
                         </div>
                         <div>
-                            <h3>London</h3>
-                            <div>133A Rye lane London SE15 4BQ UK</div>
+                            <div className="mainpage__footer_information_title">
+                                London
+                            </div>
+                            <div className="mainpage__footer_information_text">
+                                133A Rye lane London SE15 4BQ UK
+                            </div>
                         </div>
                         <div>
-                            <h3>Open positions</h3>
-                            <div>Junior Graphic Design</div>
-                            <div>Videography</div>
-                            <div>Photography</div>
+                            <div className="mainpage__footer_information_title">
+                                Open positions
+                            </div>
+                            <div className="mainpage__footer_information_text">
+                                Junior Graphic Design
+                            </div>
+                            <div className="mainpage__footer_information_text">
+                                Videography
+                            </div>
+                            <div className="mainpage__footer_information_text">
+                                Photography
+                            </div>
                         </div>
                         <div>
-                            <h3>Cape town</h3>
-                            <div>
-                                14 Upper pepper street CBD, 8001 Cape Town
+                            <div className="mainpage__footer_information_title">
+                                Cape town
+                            </div>
+                            <div className="mainpage__footer_information_text">
+                                14 Upper pepper street CBD, 8001 Cape
                             </div>
                         </div>
                     </div>
