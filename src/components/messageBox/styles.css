@@ -1,0 +1,40 @@
+.chatpage__message_box{
+    border-radius: 10px;
+    background: #1A1A1A;
+    width: 100%;
+    height: auto;
+    padding: 1rem 2rem 1rem 0.6rem;
+    margin: 16px 0px;
+    display: flex;
+    flex-direction:row;
+}
+
+.chatpage_message_box_img {
+    height:35px;
+    width:35px;
+    border-radius: 50%;
+    background-color: #B6FBFF;
+    margin-right: 1rem;
+}
+
+.chatpage_message_box_text {
+    margin-top:0.5rem;
+}
+
+.chatpage_message_box_text_content {
+    background: linear-gradient(207deg, #FFF 0%, rgba(255, 255, 255, 0.70) 98.44%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    letter-spacing: 0.64px;
+}
+
+.chatpage__message_box code{
+    display:block;
+    margin-bottom:0.4rem;
+    font-size: 1.1rem;
+}
+
+.user_title{
+    color:rgba(255, 255, 255, 0.50);
+}
