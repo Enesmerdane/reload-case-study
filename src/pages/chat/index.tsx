@@ -36,8 +36,8 @@ function Chat() {
         textAreaRef.current!.disabled = false;
     };
 
-    const handleQuestion = (message: string, event: KeyboardEvent) => {
-        event.preventDefault();
+    const handleQuestion = (message: string, event?: KeyboardEvent) => {
+        event?.preventDefault();
         console.log("textInput: ", textInput);
         console.log("message: ", message);
 
@@ -104,23 +104,7 @@ function Chat() {
                         <SendButton
                             classname="chatpage__send_button"
                             onclick={() => {
-                                if (textInput !== "") {
-                                    setMessages((prevState) => [
-                                        {
-                                            sentByUser: true,
-                                            messageText: textInput,
-                                        },
-                                        ...prevState,
-                                    ]);
-                                    let question = textInput;
-                                    setInput("");
-                                    textAreaRef.current!.disabled = true;
-                                    getResult(question, handleResponseMessage);
-                                } else {
-                                    window.alert(
-                                        "You should write something before you send."
-                                    );
-                                }
+                                handleQuestion(textInput);
                             }}
                         />
                     </div>

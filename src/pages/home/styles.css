@@ -48,6 +48,7 @@ code {
 .section2 {
     padding-left: 8.25rem;
     padding-top: 2rem;
+    perspective: 50em;
 }
 
 .section2__heading {
