@@ -1,0 +1,99 @@
+.ChatPageBody {
+    height:100%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+
+}
+
+.chatpage__section1 {
+    width: 50%;
+    height: 100vh;
+    background-color: #121212;
+    display: flex;
+    flex-direction: column;
+}
+
+.chatpage__section1_backbutton {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: #B6FBFF;
+    margin: 2.5rem 0rem 0rem 5.5rem;
+    align-self: left;
+}
+
+.chatpage__section1_arrow {
+    width: 28px;
+    margin-right: 0.6rem;
+}
+
+.chatpage__section1_title {
+    font-size: 4rem;
+    font-weight: 700;
+    text-align: center;
+    line-height: 4.1875rem;
+    margin-top: 170px;
+}
+
+.chatpage__section1_description {
+    color: rgba(255, 255, 255, 0.70);
+    text-align: center;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 400;
+    margin-top: 1rem;
+    padding:0 4.5rem;
+    line-height: 1.4375rem; /* 115% */
+    letter-spacing: 0.045rem;
+}
+
+.chatpage__section2 {
+    width: 50%;
+    display:flex;
+    flex-direction: column;
+}
+
+.chatpage__section2_logo {
+    margin-top: 24px;
+    margin-left: 28px;
+    width: 7.81544rem;
+    height: 5%;
+}
+
+.chatpage_chat_screen {
+    padding: 2rem 4rem;
+    height: 95%;
+    display:flex;
+    flex-direction: column-reverse;
+}
+
+.chatpage__input_field {
+    height: 2.8rem;
+    border-radius: 100px;
+    border: 1.2px solid #B6FBFF;
+    background: rgba(255, 255, 255, 0.16);
+    display: flex;
+    align-items: center;
+}
+
+.chatpage__input_field>input{
+    color:white;
+    background: rgba(255, 255, 255, 0.00);
+    height: 2.8rem;
+    border-radius: 100px;
+    border:none;
+    width: 100%;
+    padding-left: 1.2rem;
+    padding-right: 1rem;
+}
+.chatpage__input_field>input:focus {
+    outline:none;
+}
+
+.chatpage__send_button {
+    height: 70%;
+    margin-right: 0.4rem;
+}

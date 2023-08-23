@@ -1,5 +1,3 @@
-import React from "react";
-
 import VectorSVG from "../assets/vector_1.svg";
 
 interface VectorProps {

@@ -107,7 +107,7 @@ function Home() {
                             text="Contact us!"
                             color={buttonColorEnum.black}
                             onclick={(e) => {
-                                window.location.href = "/chat";
+                                window.alert("Contact us!");
                             }}
                             classname="mainpage__footer_button"
                         />
