@@ -28,7 +28,7 @@ function Chat() {
                     <div className="chatpage__message_container"></div>
                     <div className="chatpage__input_field">
                         {/* <input /> */}
-                        <textarea placeholder="Enter your message"/>
+                        <textarea placeholder="Enter your message" />
                         <SendButton
                             classname="chatpage__send_button"
                             onclick={() => {
