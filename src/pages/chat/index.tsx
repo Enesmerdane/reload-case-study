@@ -34,12 +34,13 @@ function Chat() {
             ]);
         }
         textAreaRef.current!.disabled = false;
+        textAreaRef.current!.focus();
     };
 
     const handleQuestion = (message: string, event?: KeyboardEvent) => {
         event?.preventDefault();
-        console.log("textInput: ", textInput);
-        console.log("message: ", message);
+        // console.log("textInput: ", textInput);
+        // console.log("message: ", message);
 
         if (textAreaRef.current?.value !== "") {
             let question = textAreaRef.current?.value;
@@ -60,7 +61,7 @@ function Chat() {
 
     useEffect(() => {
         const keyDownHandler = (event: KeyboardEvent) => {
-            console.log("User pressed: ", event.key);
+            // console.log("User pressed: ", event.key);
             if (event.key === "Enter") {
                 handleQuestion(textInput, event);
             }

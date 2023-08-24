@@ -55,8 +55,9 @@ function Home() {
     }, []);
 
     useEffect(() => {
-        console.log(isInVP);
+        // console.log(isInVP);
         if (isInVP) {
+            // lock and scoll the content
         }
 
         let perspective: number;
@@ -181,7 +182,7 @@ function Home() {
                         />
                     </div>
                     <div className="mainpage__footer_information">
-                        <div>
+                        <div className="mainpage__footer_information_block">
                             <div className="mainpage__footer_information_title">
                                 Business requires
                             </div>
@@ -192,7 +193,7 @@ function Home() {
                                 +27 123 456 789
                             </div>
                         </div>
-                        <div>
+                        <div className="mainpage__footer_information_block">
                             <div className="mainpage__footer_information_title">
                                 London
                             </div>
@@ -200,7 +201,7 @@ function Home() {
                                 133A Rye lane London SE15 4BQ UK
                             </div>
                         </div>
-                        <div>
+                        <div className="mainpage__footer_information_block">
                             <div className="mainpage__footer_information_title">
                                 Open positions
                             </div>
@@ -214,7 +215,7 @@ function Home() {
                                 Photography
                             </div>
                         </div>
-                        <div>
+                        <div className="mainpage__footer_information_block">
                             <div className="mainpage__footer_information_title">
                                 Cape town
                             </div>

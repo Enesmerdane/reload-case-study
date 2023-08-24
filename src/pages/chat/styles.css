@@ -120,3 +120,41 @@
 .chatpage__message_container::-webkit-scrollbar{
     width:0;
 }
+
+@media(max-width:750px){
+    .ChatPageBody {
+        flex-direction: column;
+    }
+    .chatpage__section1_backbutton {
+        font-size: 0.8;
+        margin-left:2px;
+        margin-top: 16px;
+    }
+    .chatpage__section1 {
+        width: 100%;
+        height: 20vh;
+    }
+    .chatpage__section1_title {
+        width:50%;
+        font-size: 2rem;
+        font-weight: 700;
+        text-align: center;
+        line-height: 2.5rem;
+        margin:auto;
+        margin-top: -20px;
+    }
+    .chatpage__section1_description {
+        font-size: 1rem;
+    }
+    .chatpage__section2 {
+        width: 100%;
+    }
+    .chatpage__section2_logo {
+        margin:auto;
+        margin-top:10px;
+    }
+    .chatpage_chat_screen {
+        height: 80vh;
+        padding-bottom: 44px;
+    }
+}
