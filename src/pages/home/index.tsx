@@ -8,15 +8,41 @@ import { topicsData } from "../../data/topics";
 import { Link } from "react-router-dom";
 
 import Button, { buttonColorEnum } from "../../components/homePageButton";
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
+
+function useIsInViewport(ref: any) {
+    const [isIntersecting, setIsIntersecting] = useState(false);
+
+    const observer = useMemo(
+        () =>
+            new IntersectionObserver(([entry]) =>
+                setIsIntersecting(entry.isIntersecting)
+            ),
+        []
+    );
+
+    useEffect(() => {
+        observer.observe(ref.current);
+
+        return () => {
+            observer.disconnect();
+        };
+    }, [ref, observer]);
+
+    return isIntersecting;
+}
 
 function Home() {
     const [yOffset, setYOffset] = useState<number>(0);
     const [perspective, setPerspective] = useState<number>(0);
 
+    const scrollableContentRef = useRef(null);
+    const scrollableContent = useRef<HTMLDivElement>(null);
+
+    const isInVP = useIsInViewport(scrollableContentRef);
+
     const scrollHandler = () => {
         setYOffset(window.scrollY);
-        console.log("window screen y", window.screenY);
     };
 
     useEffect(() => {
@@ -29,6 +55,10 @@ function Home() {
     }, []);
 
     useEffect(() => {
+        console.log(isInVP);
+        if (isInVP) {
+        }
+
         let perspective: number;
         if (yOffset > 660) {
             perspective = 0;
@@ -36,7 +66,6 @@ function Home() {
             return;
         } else {
             perspective = Math.floor((640 - yOffset) / 4) + 5;
-            console.log(perspective);
         }
 
         setPerspective(perspective);
@@ -96,7 +125,11 @@ function Home() {
                     />
                     <div className="section3__rectangle"></div>
                 </div>
-                <div className="section3__rightside">
+                <div
+                    className="section3__rightside"
+                    tabIndex={-1}
+                    ref={scrollableContent}
+                >
                     {topicsData.map((item, id) => {
                         // console.log(item);
 
@@ -115,7 +148,7 @@ function Home() {
                     })}
                 </div>
             </div>
-            <div className="section4">
+            <div className="section4" ref={scrollableContentRef}>
                 <div className="section4__head">
                     <div className="section4__heading">
                         Let’s start experiencing the new internet{" "}
