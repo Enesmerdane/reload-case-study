@@ -9,6 +9,19 @@
     cursor: pointer;
 }
 
+@media(max-width: 440px){
+    .button {
+        height: 2.3rem;
+        padding: 0rem 5.625rem;
+        border-radius: 3.75rem;
+        font-family: inherit;
+        font-size: 0.6rem;
+        font-weight: 600;
+        letter-spacing: 0.015rem;
+        cursor: pointer;
+    }
+}
+
 .blue {
     background-color: #B6FBFF;
 }
