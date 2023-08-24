@@ -1,3 +1,7 @@
+# To Run this Project
+You need to create .env file in the root directory of the project and save your chatgpt API key as follows:
+REACT_APP_OPEN_API_KEY=YOUR_API_KEY
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
